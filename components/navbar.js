@@ -14,7 +14,7 @@ export default function Navbar(props) {
   const leftmenu = [
     {
       label: "Home",
-      href: "/"
+      href: "/archive"
     },
     {
       label: "About",
@@ -28,17 +28,16 @@ export default function Navbar(props) {
 
   const rightmenu = [
     {
-      label: "Archive",
+      label: "Phone",
       href: "/archive"
     },
     {
-      label: "Pro Version",
+      label: "Email",
       href: "https://stablo-pro.web3templates.com/",
-      external: true,
-      badge: "new"
+      external: true
     },
     {
-      label: "Download",
+      label: "Instagram",
       href: "https://web3templates.com/templates/stablo-minimal-blog-website-template",
       external: true
     }
@@ -76,7 +75,7 @@ export default function Navbar(props) {
                   ))}
                 </div>
                 <div className="flex w-full items-center justify-between md:w-auto">
-                  <Link href="/" className="w-28 dark:hidden">
+                  <Link href="/archive" className="w-28 dark:hidden">
                     {props.logo ? (
                       <Image
                         {...urlForImage(props.logo)}
@@ -85,12 +84,12 @@ export default function Navbar(props) {
                         sizes="(max-width: 640px) 100vw, 200px"
                       />
                     ) : (
-                      <span className="block text-center">
-                        Stablo
-                      </span>
+                      <span className="block text-center">LENTI</span>
                     )}
                   </Link>
-                  <Link href="/" className="hidden w-28 dark:block">
+                  <Link
+                    href="/archive"
+                    className="hidden w-28 dark:block">
                     {props.logoalt ? (
                       <Image
                         {...urlForImage(props.logoalt)}
@@ -99,9 +98,7 @@ export default function Navbar(props) {
                         sizes="(max-width: 640px) 100vw, 200px"
                       />
                     ) : (
-                      <span className="block text-center">
-                        Stablo
-                      </span>
+                      <span className="block text-center">LENTI</span>
                     )}
                   </Link>
                   <Disclosure.Button
