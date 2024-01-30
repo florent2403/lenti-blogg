@@ -29,16 +29,16 @@ export default function Navbar(props) {
   const rightmenu = [
     {
       label: "Phone",
-      href: "/archive"
+      href: "tel:+38970459488"
     },
     {
       label: "Email",
-      href: "https://stablo-pro.web3templates.com/",
+      href: "mailto:fi31630@seeu.edu.mk",
       external: true
     },
     {
       label: "Instagram",
-      href: "https://web3templates.com/templates/stablo-minimal-blog-website-template",
+      href: "https://www.instagram.com/lenti.iseini?igsh=MW9xdXJqcXA3ZHFoNA==",
       external: true
     }
   ];
